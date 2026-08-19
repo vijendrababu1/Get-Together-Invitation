@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0144)file:///C:/Users/hrtrainer_u6/OneDrive%20-%20microplasticsindia.com/Dhanush%20-%20DD/Dashboard/Let's%20Get-Together%20-%20Exclusive%20Party.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let's Get-Together - Exclusive Party</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <link href="./index_files/css2" rel="stylesheet">
     <!-- Canvas Confetti for Popper Effect -->
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="./index_files/confetti.browser.min.js.download"></script>
     
     <style>
         :root {
             --primary: #f59e0b;
             --primary-dark: #d97706;
             --accent: #10b981;
-            --text-color: #f5f5f4;
+            --text-color: #000000;
             --text-muted: #a8a29e;
         }
 
@@ -42,7 +42,7 @@
             position: fixed;
             top: 0;
             left: 0;
-            width: 100vw;
+            width: 100vw;	
             height: 100vh;
             z-index: 0;
             overflow: hidden;
@@ -83,13 +83,13 @@
             z-index: 2;
             width: 100%;
             max-width: 900px;
-            background: rgba(20, 18, 16, 0.75);
+            background: #2A445F;
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             border: 1px solid rgba(245, 158, 11, 0.25);
             border-radius: 28px;
             padding: 45px 35px;
-            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            box-shadow: 0 30px 60px #D1D1D1, inset 0 1px 0 #D1D1D1;
             text-align: center;
             animation: containerEntrance 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
             opacity: 0;
@@ -147,7 +147,7 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.5);
             background: #111;
             position: relative;
-            height: 220px;
+            height: 180px;
         }
 
         .scratch-preview-container video {
@@ -169,7 +169,7 @@
 
         h1 {
             font-family: 'Playfair Display', serif;
-            font-size: clamp(2.5rem, 1vw, 3.6rem);
+            font-size: clamp(2.5rem, 5vw, 3.6rem);
             margin-bottom: 15px;
             color: #ffffff;
             letter-spacing: -0.5px;
@@ -201,7 +201,7 @@
         .agenda-section h2 {
             font-family: 'Playfair Display', serif;
             font-size: 1.4rem;
-            color: #fbbf24;
+            color: #FFFFFF;
             margin-bottom: 15px;
             text-align: center;
         }
@@ -340,78 +340,44 @@
             letter-spacing: 1px;
         }
 
-        /* Gate Pass Section */
+        /* Gate Pass Link Section */
         .gatepass-container {
+            display: none;
             margin-bottom: 30px;
             background: rgba(255, 255, 255, 0.03);
             border: 1px solid rgba(245, 158, 11, 0.4);
-            padding: 20px;
+            padding: 25px;
             border-radius: 20px;
         }
 
         .gatepass-title {
             font-size: 0.9rem;
             color: var(--primary);
-            margin-bottom: 12px;
+            margin-bottom: 15px;
             text-transform: uppercase;
             letter-spacing: 1.5px;
             font-weight: 600;
         }
 
-        .gatepass-wrapper {
-            width: 100%;
-            max-width: 240px;
-            height: 240px;
-            margin: 0 auto;
-            border-radius: 12px;
-            overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-            background: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .gatepass-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            padding: 10px;
-            display: block;
-        }
-
-        /* Navigation Buttons for Pages */
-        .nav-btn-container {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            margin-top: 25px;
-        }
-
-        .view-pass-btn {
+        .gatepass-btn {
+            display: inline-block;
             padding: 14px 28px;
             background: linear-gradient(135deg, var(--primary), var(--primary-dark));
             color: white;
-            border: none;
+            text-decoration: none;
             border-radius: 12px;
-            font-size: 1rem;
             font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            font-size: 1.1rem;
             box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
-            width: 100%;
-            max-width: 300px;
-            margin: 0 auto;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .view-pass-btn:hover {
-            opacity: 0.95;
+        .gatepass-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
         }
 
-        /* Admin Section Styling (Hidden by default) */
+        /* Admin Section Styling */
         .admin-section {
             display: none;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -507,8 +473,8 @@
 
     <!-- Dynamic Background Video Container -->
     <div id="bgVideoContainer">
-        <video id="bgVideoElement" autoplay muted loop playsinline>
-            <source id="videoSource" src="https://assets.mixkit.co/videos/preview/mixkit-party-crowd-of-people-dancing-in-a-club-41618-large.mp4" type="video/mp4">
+        <video id="bgVideoElement" autoplay="" muted="" loop="" playsinline="">
+            <source id="videoSource" src="blob:null/176b3bfb-f0f4-4795-bd01-e4a7d5127a6a" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
@@ -518,36 +484,34 @@
 
     <div class="container">
         
-        <!-- PAGE 1: Invitation & Scratch Card preview -->
-        <div class="page active" id="page1">
+        <!-- PAGE 1 -->
+        <div class="page" id="page1">
             <h1>Let's Get-Together</h1>
-            <p class="subtitle"> One gathering countless laughs Leave with stories, we probably shouldn't tell!</p>
+            <p class="subtitle">One gathering, countless laughs, memories that last forever!</p>
             
             <div class="tag">You're Invited</div>
 
             <div class="scratch-preview-container" id="page1ScratchContainer">
-                <video id="scratchVideoElement" autoplay muted loop playsinline>
-                    <source id="scratchVideoSource" src="https://assets.mixkit.co/videos/preview/mixkit-hands-holding-a-smartphone-with-a-green-screen-41642-large.mp4" type="video/mp4">
+                <video autoplay="" muted="" loop="" playsinline="">
+                    <source src="https://assets.mixkit.co/videos/preview/mixkit-hands-holding-a-smartphone-with-a-green-screen-41642-large.mp4" type="video/mp4">
                 </video>
-                <canvas id="page1ScratchCanvas" class="scratch-preview-canvas"></canvas>
+                <canvas id="page1ScratchCanvas" class="scratch-preview-canvas" width="316" height="176"></canvas>
             </div>
         </div>
 
-        <!-- PAGE 2: Event Details & Countdown -->
-        <div class="page" id="page2">
-            <!-- Detailed Agenda Section -->
+        <!-- PAGE 2 -->
+        <div class="page active" id="page2">
             <div class="agenda-section">
                 <h2>Event Details</h2>
                 <div class="agenda-grid">
                     <div class="agenda-item">
                         <span>6:00 PM Onwards</span>
-                        <h4>Welcome & Followed by Dinner</h4>
-                        <p></p>
+                        <h4>Fun &amp; Frolic with karaoke Evening</h4>
+                    
                     </div>
                 </div>
             </div>
 
-            <!-- Event Details Grid -->
             <div class="event-details">
                 <div class="detail-card">
                     <h3>Date</h3>
@@ -559,7 +523,7 @@
                 </div>
                 <div class="detail-card">
                     <h3>Location</h3>
-                    <p><a href="https://maps.app.goo.gl/UL5feDp5uJnNsLbw8" target="_blank" rel="noopener noreferrer"> Niwa L22 Phoenix Kessaku, Rajajinagar, Bangalore ↗</a></p>
+                    <p><a href="https://maps.app.goo.gl/UL5feDp5uJnNsLbw8" target="_blank" rel="noopener noreferrer">Niwa L22 Phoenix Kessaku, Rajajinagar, Bangalore </a></p>
                 </div>
             </div>
 
@@ -567,36 +531,21 @@
             <div class="countdown-container">
                 <div class="countdown-title">Countdown to the Event</div>
                 <div class="countdown" id="countdown">
-                    <div class="time-box"><span id="days">00</span><label>Days</label></div>
+                    <div class="time-box"><span id="days">17</span><label>Days</label></div>
                     <div class="time-box"><span id="hours">00</span><label>Hours</label></div>
-                    <div class="time-box"><span id="minutes">00</span><label>Mins</label></div>
-                    <div class="time-box"><span id="seconds">00</span><label>Secs</label></div>
+                    <div class="time-box"><span id="minutes">56</span><label>Mins</label></div>
+                    <div class="time-box"><span id="seconds">17</span><label>Secs</label></div>
                 </div>
             </div>
 
-            <!-- Proceed to Gate Pass Button (Page 3) -->
-            <div class="view-pass-btn-container" id="viewPassBtnContainer" style="display: block;">
-                <button type="button" class="view-pass-btn" onclick="goToPage(3)">View Gate Pass</button>
+            <!-- Gate Pass Link Section (QR Code removed, replaced with a button link) -->
+            <div class="gatepass-container" id="gatePassContainer" style="display: block;">
+                <div class="gatepass-title">Gate Pass Access</div>
+                <a id="gatePassLinkBtn" href="https://uap.mygate.com/grp-invite/6a85805be2980427e078c563" target="_blank" rel="noopener noreferrer" class="gatepass-btn">Open Gate Pass ↗</a>
             </div>
         </div>
 
-        <!-- PAGE 3: Gate Pass Barcode Page -->
-        <div class="page" id="page3">
-            <h1 style="font-size: 2rem; margin-bottom: 20px;">Your Gate Pass</h1>
-            <div class="gatepass-container">
-                <div class="gatepass-title">Scan Barcode at Entry</div>
-                <div class="gatepass-wrapper">
-                    <!-- Google Drive Direct Image Link -->
-                    <img id="gatePassDisplayImg" src="https://lh3.googleusercontent.com/d/1EBUyDR8-oUDvL9JT4HfqoRAHFsfh0otV=s1000" alt="Gate Pass Barcode">
-                </div>
-            </div>
-            
-            <div class="nav-btn-container">
-                <button type="button" class="view-pass-btn" style="max-width: 200px;" onclick="goToPage(2)">← Back to Details</button>
-            </div>
-        </div>
-
-        <!-- Admin Login Section (Toggled by pressing '4' four times) -->
+        <!-- Admin Section -->
         <div class="admin-section" id="adminSection">
             <h2>Admin Portal</h2>
             <div id="loginArea" style="display: flex; gap: 10px; flex-direction: column; max-width: 450px; margin: 0 auto;">
@@ -607,21 +556,22 @@
             <div class="admin-controls" id="adminControlsArea" style="max-width: 450px; margin: 0 auto;">
                 <p style="color: #34d399; font-size: 0.9rem; text-align: center; margin-bottom: 5px;">✔ Logged in successfully</p>
                 
-                <!-- Background Video Control -->
-                <div style="margin-bottom: 15px;">
-                    <label>Upload Background Video (Page Full-Screen)</label>
+                <div>
+                    <label>Upload Permanent Video (Background)</label>
                     <div class="file-input-wrapper">
-                        <input type="file" id="bgVideoFileInput" accept="video/*" onchange="handleBgVideoUpload(this)">
-                        <button type="button" class="remove-btn" onclick="removeBgVideo()">Reset BG</button>
+                        <input type="file" id="bgVideoFileInput" accept="video/*" onchange="handleVideoUpload(this)">
+                        <button type="button" class="remove-btn" onclick="removeBgVideo()">Reset Video</button>
                     </div>
                 </div>
 
-                <!-- 2nd Video File Control (Scratch Card Video) -->
-                <div>
-                    <label>Upload Scratch Video (1st Page Box)</label>
-                    <div class="file-input-wrapper">
-                        <input type="file" id="scratchVideoFileInput" accept="video/*" onchange="handleScratchVideoUpload(this)">
-                        <button type="button" class="remove-btn" onclick="removeScratchVideo()">Reset Scratch</button>
+                <div style="margin-top: 10px;">
+                    <label>Gate Pass Link / URL</label>
+                    <div style="display: flex; gap: 10px; flex-direction: column;">
+                        <input type="url" id="gatePassUrlInput" placeholder="https://example.com/gate-pass">
+                        <div style="display: flex; gap: 10px;">
+                            <button type="button" class="admin-submit" onclick="saveGatePassUrl()">Save Pass Link</button>
+                            <button type="button" class="admin-submit remove-btn" onclick="removeGatePassUrl()">Remove Link</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -632,8 +582,7 @@
         // --- Page Navigation Control ---
         function goToPage(pageNum) {
             document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-            const targetPage = document.getElementById('page' + pageNum);
-            targetPage.classList.add('active');
+            document.getElementById('page' + pageNum).classList.add('active');
             window.scrollTo({ top: 0, behavior: 'smooth' });
             
             if (pageNum === 1) {
@@ -657,68 +606,48 @@
             }
         });
 
-        // --- IndexedDB Setup for Permanent Storage (Videos Only) ---
+        // --- IndexedDB Setup for Permanent Storage ---
         let db;
-        const dbRequest = indexedDB.open("PartyAppDB", 4);
+        const dbRequest = indexedDB.open("PartyAppDB", 6);
 
         dbRequest.onupgradeneeded = function(event) {
             db = event.target.result;
             if (!db.objectStoreNames.contains("videos")) db.createObjectStore("videos");
+            if (!db.objectStoreNames.contains("gatepass")) db.createObjectStore("gatepass");
         };
 
         dbRequest.onsuccess = function(event) {
             db = event.target.result;
-            loadSavedVideos();
+            loadSavedVideo();
+            loadSavedGatePassUrl();
             setTimeout(initPage1ScratchCard, 100);
         };
 
         // --- Video Storage Handlers ---
-        function loadSavedVideos() {
+        function loadSavedVideo() {
             if (!db) return;
-            
-            const bgTx = db.transaction(["videos"], "readonly");
-            const bgReq = bgTx.objectStore("videos").get("customBgVideo");
-            bgReq.onsuccess = function(event) {
-                if (event.target.result) playVideoFromBlob(event.target.result, 'bgVideoElement', 'videoSource');
-            };
-
-            const scratchTx = db.transaction(["videos"], "readonly");
-            const scratchReq = scratchTx.objectStore("videos").get("customScratchVideo");
-            scratchReq.onsuccess = function(event) {
-                if (event.target.result) playVideoFromBlob(event.target.result, 'scratchVideoElement', 'scratchVideoSource');
+            const transaction = db.transaction(["videos"], "readonly");
+            const request = transaction.objectStore("videos").get("customBgVideo");
+            request.onsuccess = function(event) {
+                if (event.target.result) playVideoFromBlob(event.target.result);
             };
         }
 
-        function handleBgVideoUpload(input) {
+        function handleVideoUpload(input) {
             if (input.files && input.files[0]) {
                 const file = input.files[0];
                 const transaction = db.transaction(["videos"], "readwrite");
                 transaction.objectStore("videos").put(file, "customBgVideo");
-                transaction.oncomplete = () => { 
-                    playVideoFromBlob(file, 'bgVideoElement', 'videoSource'); 
-                    alert('Background video saved!'); 
-                };
+                transaction.oncomplete = () => { playVideoFromBlob(file); alert('Background video saved!'); };
             }
         }
 
-        function handleScratchVideoUpload(input) {
-            if (input.files && input.files[0]) {
-                const file = input.files[0];
-                const transaction = db.transaction(["videos"], "readwrite");
-                transaction.objectStore("videos").put(file, "customScratchVideo");
-                transaction.oncomplete = () => { 
-                    playVideoFromBlob(file, 'scratchVideoElement', 'scratchVideoSource'); 
-                    alert('Scratch video saved!'); 
-                };
-            }
-        }
-
-        function playVideoFromBlob(blob, videoElementId, sourceId) {
+        function playVideoFromBlob(blob) {
             const fileURL = URL.createObjectURL(blob);
-            const videoElement = document.getElementById(videoElementId);
-            document.getElementById(sourceId).src = fileURL;
-            videoElement.load();
-            videoElement.play().catch(() => {});
+            const bgVideoElement = document.getElementById('bgVideoElement');
+            document.getElementById('videoSource').src = fileURL;
+            bgVideoElement.load();
+            bgVideoElement.play().catch(() => {});
         }
 
         function removeBgVideo() {
@@ -734,25 +663,12 @@
             };
         }
 
-        function removeScratchVideo() {
-            if (!db) return;
-            const transaction = db.transaction(["videos"], "readwrite");
-            transaction.objectStore("videos").delete("customScratchVideo");
-            transaction.oncomplete = () => {
-                document.getElementById('scratchVideoSource').src = "https://assets.mixkit.co/videos/preview/mixkit-hands-holding-a-smartphone-with-a-green-screen-41642-large.mp4";
-                document.getElementById('scratchVideoElement').load();
-                document.getElementById('scratchVideoElement').play();
-                document.getElementById('scratchVideoFileInput').value = '';
-                alert('Reset scratch video.');
-            };
-        }
-
         // --- Page 1 Scratch Card Setup ---
         function initPage1ScratchCard() {
             const canvas = document.getElementById('page1ScratchCanvas');
             if (!canvas || canvas.offsetWidth === 0) return;
             const ctx = canvas.getContext('2d');
-            let transitionTriggered = false;
+            let popperDone = false;
 
             canvas.width = canvas.offsetWidth;
             canvas.height = canvas.offsetHeight;
@@ -767,15 +683,6 @@
             ctx.fillText('Scratch Here', canvas.width / 2, canvas.height / 2);
 
             let isDrawing = false;
-
-            function executeTransition() {
-                if (transitionTriggered) return;
-                transitionTriggered = true;
-                confetti({ particleCount: 120, spread: 80, origin: { y: 0.5 } });
-                setTimeout(() => {
-                    goToPage(2);
-                }, 400);
-            }
 
             function getMousePos(e) {
                 const rect = canvas.getBoundingClientRect();
@@ -792,16 +699,18 @@
                 ctx.arc(pos.x, pos.y, 25, 0, Math.PI * 2);
                 ctx.fill();
 
-                if (!transitionTriggered) {
+                if (!popperDone) {
                     const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
                     let cleared = 0;
                     for (let i = 3; i < imgData.data.length; i += 4) {
                         if (imgData.data[i] === 0) cleared++;
                     }
-                    // Triggers page transition when more than 40% of the card is scratched
                     if (cleared / (imgData.data.length / 4) > 0.40) {
-                        ctx.clearRect(0, 0, canvas.width, canvas.height);
-                        executeTransition();
+                        popperDone = true;
+                        confetti({ particleCount: 120, spread: 80, origin: { y: 0.5 } });
+                        setTimeout(() => {
+                            goToPage(2);
+                        }, 400);
                     }
                 }
             }
@@ -818,6 +727,51 @@
             canvas.addEventListener('touchstart', (e) => { isDrawing = true; scratch(e); e.preventDefault(); }, { passive: false });
             canvas.addEventListener('touchmove', (e) => { scratch(e); e.preventDefault(); }, { passive: false });
             canvas.addEventListener('touchend', () => { isDrawing = false; });
+        }
+
+        // --- Gate Pass Link Handlers ---
+        function loadSavedGatePassUrl() {
+            if (!db) return;
+            const transaction = db.transaction(["gatepass"], "readonly");
+            const request = transaction.objectStore("gatepass").get("customGatePassUrl");
+            request.onsuccess = function(event) {
+                const url = event.target.result;
+                if (url) {
+                    document.getElementById('gatePassLinkBtn').href = url;
+                    document.getElementById('gatePassContainer').style.display = 'block';
+                    document.getElementById('gatePassUrlInput').value = url;
+                } else {
+                    document.getElementById('gatePassContainer').style.display = 'none';
+                }
+            };
+        }
+
+        function saveGatePassUrl() {
+            const url = document.getElementById('gatePassUrlInput').value.trim();
+            if (!url) {
+                alert('Please enter a valid URL.');
+                return;
+            }
+            if (!db) return;
+            const transaction = db.transaction(["gatepass"], "readwrite");
+            transaction.objectStore("gatepass").put(url, "customGatePassUrl");
+            transaction.oncomplete = () => {
+                document.getElementById('gatePassLinkBtn').href = url;
+                document.getElementById('gatePassContainer').style.display = 'block';
+                alert('Gate pass link saved successfully!');
+            };
+        }
+
+        function removeGatePassUrl() {
+            if (!db) return;
+            const transaction = db.transaction(["gatepass"], "readwrite");
+            transaction.objectStore("gatepass").delete("customGatePassUrl");
+            transaction.oncomplete = () => {
+                document.getElementById('gatePassContainer').style.display = 'none';
+                document.getElementById('gatePassLinkBtn').href = '#';
+                document.getElementById('gatePassUrlInput').value = '';
+                alert('Gate pass link removed.');
+            };
         }
 
         // --- Countdown Timer Logic ---
@@ -857,5 +811,5 @@
             }
         }
     </script>
-</body>
-</html>
+
+</body></html>
